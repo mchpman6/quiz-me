@@ -15,4 +15,14 @@ class StaticPagesController < ApplicationController
       format.html { render :about }
     end
   end
+  def contact
+    respond_to do |format|
+      format.html { render :contact }
+    end
+  end
+  def leave_feedback
+    respond_to do |format|
+      format.html { render :contact }
+    end
+  end
 end
