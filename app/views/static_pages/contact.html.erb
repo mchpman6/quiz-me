@@ -3,9 +3,6 @@
 <p>We welcome your feedback. Please submit the form below to let us know what you think or alert us to any problems you are having with QuizMe.</p>
 
 <h2>Feedback</h2>
-<% if local_assigns.has_key? :status_msg %>
-   <p><%= status_msg %></p>
-<% end %>
 <%= form_with url: leave_feedback_path, local: true, method: :post do %>
 <div>
     <%= label_tag "name" %>

@@ -1,5 +1,4 @@
-<h1>McQuestions#index</h1>
-<p>Find me in app/views/mc_questions/index.html.erb</p>
+<%= link_to 'New Question', new_mc_question_path %>
 <h1>Multiple Choice Questions</h1>
 <% questions.each do |question| %>
    <div id="<%= dom_id(question) %>">
